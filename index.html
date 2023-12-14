@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make card</title>
+    <style>
+     
+      div {
+        border: 2px solid rgb(135, 10, 85);
+        /* width: 41.8%; */
+        text-align:center;
+        border-radius: 8px;
+        background-color: rgb(6, 18, 51);
+        height: max-content;
+        
+        
+      }
+      .image {
+        text-align: center;
+        /* border: 2px solid rgb(135, 10, 85); */
+        border-radius: 20px;
+        width: 400px;
+        height: 300px;
+        /* padding: 2px; */
+        margin:1px;
+
+      }
+      span,a,h2{
+        border: 2px solid rgb(171, 24, 230);
+        border-radius: 5px;
+        background-color: rgb(171, 24, 230);
+        color: rgb(255, 255, 255);
+        box-shadow: 2px 2px 3px 1px white;
+        display: inline;
+        position: relative;
+      
+        
+      }
+      .akhil{
+        width: 30%;
+        height: 5%;
+        box-shadow: 2px 2px 3px 1px black;
+        border-style: groove;
+        border-radius: 30px;
+        box-shadow: 2px 2px 3px 3px white;
+      }
+      form{
+        text-align: center;
+      }
+      p{
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: cursive;
+        /* border: 2px solid black;
+        border-style: dotted; */
+        
+        
+      }
+      .submit{
+        background-color: rgb(22, 219, 15);
+        color: white;
+        font-size: 15px;
+        border-radius: 12px;
+        box-shadow: 2px 2px 3px 1px rgb(246, 243, 243);
+      }
+      .input{
+        background-color: white;
+        box-shadow: 2px 2px 3px 1px rgb(245, 239, 239);
+
+      }
+      .a{
+        font-size: 60px;
+        color: rgb(230, 230, 45);
+        
+      }
+   
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- <img class="image" src="k.webp" alt="happy new year" /> -->
+      <img class="image" src="j.webp" alt="2024">
+      <h1 class="a">HAPPY NEW  YEAR </h1>
+      <h1 style="color: white">About Akhil </h1>
+      <img class="akhil" src="akhilimage.jpg" alt="">
+      <br>
+      <span><a href="index3.html">Click to know more</a></span>
+      <p>
+        It's me Akhilesh a Web developer
+        <br>I am a learner
+      </p>
+      <h2>Enter Your Name</h2>
+    <br>
+    <br>
+      <form action="index2.html" method="get" onsubmit="saveName()">
+          <label for="name"></label>
+          <input class="input"  type="text" id="name" name="name" required>
+          
+          <button class="submit" type="submit">Submit</button>
+      </form>
+  
+      <script>
+          function saveName() {
+              var name = document.getElementById("name").value;
+              localStorage.setItem("user_name", name);
+          }
+      </script>
+    </div>
+
+  
+  </body>
+</html>
